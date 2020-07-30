@@ -1,6 +1,6 @@
 from django.urls import path,include
-from secondapp import views
+from . import views
 
 urlpatterns = [
-    path('show/', views.show),
+    path('show/', views.hospital),
 ]

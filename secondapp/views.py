@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Hospital
 
-def show(request):
-    hospital = Hospital.objects.all()
-#    return render(request, 'show.html', {'list':hospital})
-    return render(request, 'show.html', {'list':hospital})
+def hospital(request):
+    sample = Hospital.objects.all()
+    return render(request, 'hospital.html', {'list':sample})
